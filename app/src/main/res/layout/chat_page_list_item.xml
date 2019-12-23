@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/appIconIV_chat_page"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/aNametxt_chat_page"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/appIconIV_chat_page"
+        android:layout_toRightOf="@+id/appIconIV_chat_page"
+        android:maxLines="1"
+        android:text="Android Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/aVersiontxt_chat_page"
+        android:layout_width="321dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/aNametxt_chat_page"
+        android:layout_alignStart="@+id/aNametxt_chat_page"
+        android:layout_alignLeft="@+id/aNametxt_chat_page"
+        android:layout_marginStart="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="-1dp"
+        android:background="#00BCD4"
+        android:maxLines="1"
+        android:text="Android Version"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
