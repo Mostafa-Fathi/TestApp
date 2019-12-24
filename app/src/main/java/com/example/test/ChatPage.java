@@ -39,7 +39,6 @@ public class ChatPage extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_page);
-        listView=(ListView)findViewById(R.id.chatpage_listview);
 
         message=(EditText)findViewById(R.id.chatpage_message_et);
         send=(ImageButton)findViewById(R.id.chatpage_send_imageButton);
@@ -47,8 +46,8 @@ public class ChatPage extends AppCompatActivity{
         message.setMaxLines(5);
         message.setVerticalScrollBarEnabled(true);
         message.setMovementMethod(new ScrollingMovementMethod());
-        stringArrayList.addAll(Arrays.asList(version));
-        lView = (ListView) findViewById(R.id.chatmenu_listview);
+       // stringArrayList.addAll(Arrays.asList(version));
+        lView = (ListView) findViewById(R.id.chatpage_listview);
 
         lAdapter = new ChatPageListAdaptor(this, version, versionNumber, images);
 

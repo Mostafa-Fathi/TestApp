@@ -74,7 +74,11 @@ public class ListAdapter extends BaseAdapter {
 
         viewHolder.txtName.setText(values[position]);
         viewHolder.txtVersion.setText("Version: "+numbers[position]);
-        viewHolder.icon.setImageResource(images[position]);
+        if (images[position]!=0){
+            viewHolder.icon.setImageResource(images[position]);}
+        else {
+            viewHolder.icon.setImageResource(R.mipmap.ic_launcher);
+        }
 
         return convertView;
     }
